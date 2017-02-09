@@ -7,11 +7,12 @@ angular.module('app').directive('formEntry', function(){
         },
         controller: function(){},
         controllerAs: 'entryCtrl',
+        link: function(scope, element, attr, entryCtrl){
+            var label = angular.element("<label>"+entryCtrl.labelText+"</label>");
+            label.insertBefore(element);
+        },
         restrict: 'A',
-        replace: true,
         scope: true,
-        templateUrl: 'partials/form-entry.html',
-        transclude: 'element'
     };
 });
 

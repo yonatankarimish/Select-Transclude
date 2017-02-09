@@ -11,9 +11,9 @@
 </head>
 <body ng-app="app" ng-controller="MainController as main">
     <form>
-        <input form-entry label-text="Your name:" type="text" ng-model="main.inputModel" /><span>Wrapped input</span>
-        <select ng-model="main.selectModel" ng-options="person.id as person.name for person in main.people | orderBy:'name'"></select><span>Unwrapped select</span>
-        <select form-entry label-text="Great people:" ng-model="main.selectModel" ng-options="person.id as person.name for person in main.people | orderBy:'name'"></select><span>Wrapped select</span>
+        <input form-entry label-text="Your name:" type="text" ng-model="main.inputModel" />
+        <select form-entry label-text="Great people:" ng-model="main.selectModel" ng-options="person.id as person.name for person in main.people | orderBy:'name'"></select>
+        <p>Select value is now {{main.selectModel}}</p>
     </form>
 </body>
 </html>

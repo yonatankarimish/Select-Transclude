@@ -10,7 +10,6 @@ form{
         margin: 20px auto;
         padding: 20px;
         width: 500px;
-
 }
 
 div.formEntry{
@@ -18,14 +17,16 @@ div.formEntry{
     margin-bottom: 20px;
 }
 
-.formEntry label{
+label{
     display: inline-block;
+    float: left;
+    clear: left;
     width:100px;
 }
 
 input, select{
-    width:220px;
     margin: 0px 5px;
+    width:220px;
 }
 
 span
