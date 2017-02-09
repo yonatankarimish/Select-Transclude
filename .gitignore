@@ -1,0 +1,11 @@
+*.class
+notes.txt
+
+# BlueJ files
+*.ctxt
+
+*.iml
+
+
+.idea/
+
